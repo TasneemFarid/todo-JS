@@ -48,8 +48,8 @@ function addTodo() {
 
     let remove = document.querySelectorAll(".delete");
     let removeArr = Array.from(remove);
-    removeArr.map((item, index) => {
-      item.addEventListener("click", function () {
+    removeArr.map((button, index) => {
+      button.addEventListener("click", function () {
         taskarr.splice(index, 1);
         addTodo();
       });
